@@ -28,11 +28,12 @@ export default function AvailableUsers({onSelectUser}){
      if(error){
         return ( <Error title="An error Occured!" message={error.message}/> );
       }
+
     
     return(
         <>
         <UserDetails
-        title="Available Users"
+        title="Available User"
         users={userNames}
         isLoading={isFetching}
         loadingText="Fetching Place Data..."
